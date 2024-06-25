@@ -1,0 +1,81 @@
+:root {
+  --primary-color: #007bff;
+  --background-color: #f2f2f2;
+  --text-color: #000;
+  --dark-background-color: #333;
+  --dark-text-color: #fff;
+  --gradient-start: #f2f2f2;
+  --gradient-end: #ffffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+  color: var(--text-color);
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.dark-mode {
+  background-color: var(--dark-background-color);
+  color: var(--dark-text-color);
+}
+
+.container {
+  text-align: center;
+  max-width: 960px;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.profile-name {
+  font-weight: bold;
+  font-size: 2em;
+  color: var(--primary-color);
+  margin: 0.5em 0;
+}
+
+.tagline {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.8em;
+}
+
+@media (max-width: 768px) {
+  .profile-name {
+    font-size: 1.5em;
+  }
+}
